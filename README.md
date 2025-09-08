@@ -8,7 +8,7 @@
   
 **Intro**
 
-*[Link to deployed site](https://thebenstenator.github.io/se_project_spots/)
+* [Link to deployed site](https://thebenstenator.github.io/se_project_spots/)
   
 This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
   
