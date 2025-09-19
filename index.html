@@ -6,7 +6,7 @@
     <meta name="description" content="Share your photos with friends" />
     <meta name="author" content="Ben Anderson" />
     <link rel="stylesheet" href="pages/index.css" />
-    <link rel="favicon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
   <body>
@@ -51,13 +51,7 @@
             />
             <div class="card__content">
               <p class="card__description">Val Thorens</p>
-              <button type="button" class="card__button">
-                <img
-                  src="images/heart.svg"
-                  alt="Heart Icon"
-                  class="card__like"
-                />
-              </button>
+              <button type="button" class="card__button"></button>
             </div>
           </div>
           <div class="card">
@@ -68,13 +62,7 @@
             />
             <div class="card__content">
               <p class="card__description">Restaurant terrace</p>
-              <button type="button" class="card__button">
-                <img
-                  src="images/heart.svg"
-                  alt="Heart Icon"
-                  class="card__like"
-                />
-              </button>
+              <button type="button" class="card__button"></button>
             </div>
           </div>
           <div class="card">
@@ -85,13 +73,7 @@
             />
             <div class="card__content">
               <p class="card__description">An outdoor cafe</p>
-              <button type="button" class="card__button">
-                <img
-                  src="images/heart.svg"
-                  alt="Heart Icon"
-                  class="card__like"
-                />
-              </button>
+              <button type="button" class="card__button"></button>
             </div>
           </div>
           <div class="card">
@@ -104,13 +86,7 @@
               <p class="card__description">
                 A very long bridge, over the forest national to state
               </p>
-              <button type="button" class="card__button">
-                <img
-                  src="images/heart.svg"
-                  alt="Heart Icon"
-                  class="card__like"
-                />
-              </button>
+              <button type="button" class="card__button"></button>
             </div>
           </div>
           <div class="card">
@@ -121,13 +97,7 @@
             />
             <div class="card__content">
               <p class="card__description">Tunnel with morning light</p>
-              <button type="button" class="card__button">
-                <img
-                  src="images/heart.svg"
-                  alt="Heart Icon"
-                  class="card__like"
-                />
-              </button>
+              <button type="button" class="card__button"></button>
             </div>
           </div>
           <div class="card">
@@ -138,13 +108,7 @@
             />
             <div class="card__content">
               <p class="card__description">Mountain house</p>
-              <button type="button" class="card__button">
-                <img
-                  src="images/heart.svg"
-                  alt="Heart Icon"
-                  class="card__like"
-                />
-              </button>
+              <button type="button" class="card__button"></button>
             </div>
           </div>
         </section>
@@ -156,7 +120,11 @@
 
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-btn"></button>
+          <button
+            type="button"
+            class="modal__close-btn"
+            aria-label="Close modal"
+          ></button>
           <h2 class="modal__title">Edit profile</h2>
           <form class="modal__form">
             <label for="profile-name-input" class="modal__label">
@@ -184,7 +152,11 @@
 
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-btn"></button>
+          <button
+            type="button"
+            class="modal__close-btn"
+            aria-label="Close modal"
+          ></button>
           <h2 class="modal__title">New post</h2>
           <form class="modal__form">
             <label for="post-image-input" class="modal__label">
