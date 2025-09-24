@@ -106,6 +106,7 @@
   .profile__name {
     font-size: 20px;
     margin-bottom: 6px;
+    text-align: center;
   }
 
   .profile__description {
