@@ -43,74 +43,18 @@
         </section>
 
         <section class="cards page__section">
-          <div class="card">
-            <img
-              src="images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt="Snowy mountain town through window"
-              class="card__image"
-            />
-            <div class="card__content">
-              <p class="card__description">Val Thorens</p>
-              <button type="button" class="card__button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="images/2-photo-by-ceiline-from-pexels.jpg"
-              alt="Restaurant terrace"
-              class="card__image"
-            />
-            <div class="card__content">
-              <p class="card__description">Restaurant terrace</p>
-              <button type="button" class="card__button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-              alt="People sitting at outdoor tables"
-              class="card__image"
-            />
-            <div class="card__content">
-              <p class="card__description">An outdoor cafe</p>
-              <button type="button" class="card__button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="images/4-photo-by-maurice-laschet-from-pexels.jpg"
-              alt="Very long bride over forest"
-              class="card__image"
-            />
-            <div class="card__content">
-              <p class="card__description">
-                A very long bridge, over the forest national to state
-              </p>
-              <button type="button" class="card__button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-              alt="Tunel with windows"
-              class="card__image"
-            />
-            <div class="card__content">
-              <p class="card__description">Tunnel with morning light</p>
-              <button type="button" class="card__button"></button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-              alt="Cabin in snowy woods"
-              class="card__image"
-            />
-            <div class="card__content">
-              <p class="card__description">Mountain house</p>
-              <button type="button" class="card__button"></button>
-            </div>
-          </div>
+          <ul class="cards__list">
+            <template id="card-template">
+              <li class="card">
+                <button class="card__delete-button" type="button"></button>
+                <img class="card__image" src="#" alt="" />
+                <div class="card__footer">
+                  <h2 class="card__title"></h2>
+                  <button class="card__like-button" type="button"></button>
+                </div>
+              </li>
+            </template>
+          </ul>
         </section>
       </main>
 
@@ -179,6 +123,22 @@
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
+        </div>
+      </div>
+
+      <div class="modal" id="preview-modal">
+        <div class="modal__image-container">
+          <button
+            class="modal__preview-close-btn"
+            type="button"
+            aria-label="Close modal"
+          ></button>
+          <img
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
+            alt="Golden Gate"
+            class="modal__image"
+          />
+          <p class="modal__caption">Golden Gate bridge</p>
         </div>
       </div>
     </div>
