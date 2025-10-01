@@ -125,7 +125,7 @@ function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  openModal(editProfileModal);
+  closeModal(editProfileModal);
   evt.target.reset();
 }
 
