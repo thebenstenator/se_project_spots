@@ -28,7 +28,7 @@
               <img
                 src="images/pencil-icon.svg"
                 alt="Pencil Icon"
-                class="profile__edit-button"
+                class="profile__pencil-icon"
               />
               Edit profile
             </button>
@@ -37,7 +37,7 @@
             <img
               src="images/plus-sign.svg"
               alt="Plus Icon"
-              class="profile__button-plus"
+              class="profile__plus-icon"
             />New Post
           </button>
         </section>
@@ -46,11 +46,19 @@
           <ul class="cards__list">
             <template id="card-template">
               <li class="card">
-                <button class="card__delete-button" type="button"></button>
+                <button
+                  class="card__delete-button"
+                  type="button"
+                  aria-label="Delete card"
+                ></button>
                 <img class="card__image" src="#" alt="" />
                 <div class="card__footer">
                   <h2 class="card__title"></h2>
-                  <button class="card__like-button" type="button"></button>
+                  <button
+                    class="card__like-button"
+                    type="button"
+                    aria-label="Like card"
+                  ></button>
                 </div>
               </li>
             </template>
@@ -78,6 +86,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
             <label for="profile-description-input" class="modal__label">
@@ -87,6 +96,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -110,6 +120,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
             </label>
             <label for="post-caption-input" class="modal__label">
@@ -119,6 +130,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -133,12 +145,8 @@
             type="button"
             aria-label="Close modal"
           ></button>
-          <img
-            src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
-            alt="Golden Gate"
-            class="modal__image"
-          />
-          <p class="modal__caption">Golden Gate bridge</p>
+          <img src="" alt="" class="modal__image" />
+          <p class="modal__caption"></p>
         </div>
       </div>
     </div>
