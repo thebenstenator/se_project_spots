@@ -11,6 +11,7 @@
 - [Link to deployed site](https://thebenstenator.github.io/se_project_spots/)
 
 Showcase of responsive web design using BEM naming conventions, grid layout, and flexbox layout according to a design brief on figma.
+Also implemented javascript functionality for adding new cards, validating forms, opening and closing forms etc.
 
 **Figma**
 
@@ -18,4 +19,4 @@ Showcase of responsive web design using BEM naming conventions, grid layout, and
 
 **Video**
 
-- [Please watch video showcase](https://drive.google.com/file/d/1_FMyvtR6pAgSacRna1i4gdYILChm3nex/view?usp=drive_link)
+- [Please watch video showcase](https://drive.google.com/file/d/1FvAzLOev6yW4OX_q3WRV-56Ehz-srgRB/view?usp=drive_link)
