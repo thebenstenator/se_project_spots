@@ -63,13 +63,24 @@ const previewModalCloseBtn = previewModal.querySelector(
 const previewModalImage = previewModal.querySelector(".modal__image");
 const previewModalCaption = previewModal.querySelector(".modal__caption");
 
+function handleEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
   document.activeElement.blur();
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
 function getCardElement(data) {
@@ -100,15 +111,6 @@ function getCardElement(data) {
 
   return cardElement;
 }
-
-document.addEventListener("keydown", (evt) => {
-  if (evt.key === "Escape") {
-    const openModal = document.querySelector(".modal_is-opened");
-    if (openModal) {
-      closeModal(openModal);
-    }
-  }
-});
 
 previewModalCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
