@@ -19,4 +19,4 @@ Also implemented javascript functionality for adding new cards, validating forms
 
 **Video**
 
-- [Please watch video showcase](https://drive.google.com/file/d/1FvAzLOev6yW4OX_q3WRV-56Ehz-srgRB/view?usp=drive_link)
+- [Project Pitch Video](https://drive.google.com/file/d/1zIHkx2mQaocikAXnDHZbpQY_-QoEURzW/view?usp=drive_link)
