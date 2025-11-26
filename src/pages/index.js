@@ -42,8 +42,6 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
-const editProfileSubmitBtn =
-  editProfileModal.querySelector(".modal__submit-btn");
 
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostForm = newPostModal.querySelector(".modal__form");
@@ -70,14 +68,12 @@ const deleteModalCloseBtn = deleteModal.querySelector(
 const deleteModalCancelBtn = deleteModal.querySelector(
   ".modal__btn_type_cancel"
 );
-const deleteSubmitBtn = deleteModal.querySelector(".modal__btn_type_delete");
 
 const editAvatarBtn = document.querySelector(".profile__avatar-btn");
 const avatarModal = document.querySelector("#avatar-modal");
 const avatarModalCloseBtn = avatarModal.querySelector(".modal__close-btn");
 const avatarModalForm = avatarModal.querySelector(".modal__form");
 const avatarInput = avatarModal.querySelector("#avatar-image-input");
-const avatarSubmitBtn = avatarModal.querySelector(".modal__submit-btn");
 
 let selectedCard;
 let selectedCardId;
@@ -99,7 +95,7 @@ api
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
 
-  editProfileSubmitBtn.textContent = "Saving...";
+  evt.submitter.textContent = "Saving...";
 
   api
     .editUserInfo({
@@ -113,14 +109,14 @@ function handleProfileFormSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      editProfileSubmitBtn.textContent = "Save";
+      evt.submitter.textContent = "Save";
     });
 }
 
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
 
-  newPostButtonElement.textContent = "Saving...";
+  evt.submitter.textContent = "Saving...";
 
   api
     .addNewCard({
@@ -136,14 +132,14 @@ function handleNewPostSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      newPostButtonElement.textContent = "Save";
+      evt.submitter.textContent = "Save";
     });
 }
 
 function handleAvatarSubmit(evt) {
   evt.preventDefault();
 
-  avatarSubmitBtn.textContent = "Saving...";
+  evt.submitter.textContent = "Saving...";
 
   api
     .updateAvatar({ avatar: avatarInput.value })
@@ -154,14 +150,14 @@ function handleAvatarSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      avatarSubmitBtn.textContent = "Save";
+      evt.submitter.textContent = "Save";
     });
 }
 
 function handleDeleteSubmit(evt) {
   evt.preventDefault();
 
-  deleteSubmitBtn.textContent = "Deleting...";
+  evt.submitter.textContent = "Deleting...";
 
   api
     .deleteCard(selectedCardId)
@@ -171,7 +167,7 @@ function handleDeleteSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      deleteSubmitBtn.textContent = "Delete";
+      evt.submitter.textContent = "Delete";
     });
 }
 
