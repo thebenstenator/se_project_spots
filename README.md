@@ -8,10 +8,18 @@
 
 **Intro**
 
-- [Link to deployed site](https://thebenstenator.github.io/se_project_spots/)
+A full-featured social media application for sharing and discovering photos. Built with vanilla JavaScript and integrated with a RESTful API for data persistence, this project demonstrates modern frontend development including responsive design (BEM, Grid, Flexbox), dynamic content rendering, form validation, and interactive UI components.
 
-Showcase of responsive web design using BEM naming conventions, grid layout, and flexbox layout according to a design brief on figma.
-Also implemented javascript functionality for adding new cards, validating forms, opening and closing forms etc.
+**Live Demo:** [View Project](https://thebenstenator.github.io/se_project_spots/)
+
+**Features:**
+
+- API integration for creating, reading, updating, and deleting posts
+- User profile management with avatar updates
+- Like/unlike functionality with real-time updates
+- Form validation and error handling
+- Modal-based interactions
+- Fully responsive across all devices
 
 **Figma**
 
